@@ -3,9 +3,32 @@ Custom phishing detection boosting model using handcrafted features and a lightw
 
 ---
 
-## Example Usage
+##  Featured Project: PHINet
 
-```python
+PHINet is a custom-built Python package that detects phishing emails using handcrafted features and a lightweight boosting model.
+
+🔐 Features:
+- Detects phishing based on email content, URLs, attachments, and sender domain
+- Uses a custom boosting algorithm (PHINetBoost)
+- Easy to install and extend
+
+📦 Available on [PyPI](https://pypi.org/project/phinet)  
+📁 Source code: [GitHub Repo](https://github.com/Vasantlohar0504/phinet)
+
+---
+
+## 📦 Installation
+
+```bash
+pip install phinet
+
+
+
+# PHINet
+Custom phishing detection boosting model using handcrafted features and a lightweight decision tree ensemble.
+
+---
+
 from phinet.model import PHINetBoost, PHINetFeatureEngine
 import pandas as pd
 
@@ -24,3 +47,18 @@ X = engine.transform(df)
 model = PHINetBoost(n_estimators=5, max_depth=3)
 model.fit(X, [1])  # 1 means 'Phishing' for demo
 print("Prediction:", "Phishing" if model.predict(X)[0] == 1 else "Legitimate")
+
+
+
+---
+
+## ✅ Final Steps
+
+1. Replace your current `README.md` content with the cleaned version above.
+2. Save the file.
+3. Push it to GitHub:
+
+```bash
+git add README.md
+git commit -m "Fix README formatting and finalize usage section"
+git push
