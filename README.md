@@ -51,14 +51,3 @@ print("Prediction:", "Phishing" if model.predict(X)[0] == 1 else "Legitimate")
 
 
 ---
-
-## ✅ Final Steps
-
-1. Replace your current `README.md` content with the cleaned version above.
-2. Save the file.
-3. Push it to GitHub:
-
-```bash
-git add README.md
-git commit -m "Fix README formatting and finalize usage section"
-git push
